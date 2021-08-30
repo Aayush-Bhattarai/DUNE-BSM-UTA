@@ -76,11 +76,11 @@ void histo()
 	histos->Draw("nostack");
 	
 	//Drawing Legend
-	TLegend *leg = new TLegend();
-	leg->SetHeader("#nu types", "C"); //C means center
-	leg->AddEntry(hist1, "nu_e", "f"); //f gives a square box
-	leg->AddEntry(hist2, "nu_mu", "f");
-	leg->AddEntry(hist3, "anti_nu_e", "f");
-	leg->AddEntry(hist4, "anti_nu_mu", "f");
-	leg->Draw();
+	TLegend *legend = new TLegend();
+	legend->SetHeader("#nu types", "C"); //C means center
+	legend->AddEntry(hist1, "nu_e", "f"); //f gives a square box
+	legend->AddEntry(hist2, "nu_mu", "f");
+	legend->AddEntry(hist3, "anti_nu_e", "f");
+	legend->AddEntry(hist4, "anti_nu_mu", "f");
+	legend->Draw();
 }
